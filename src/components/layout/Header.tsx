@@ -139,16 +139,8 @@ const Header = () => {
   return (
     <header className="h-14 bg-header-bg border-b border-header-border flex items-center justify-between px-5 shrink-0">
       <div className="flex items-center gap-4">
-        {/* Ingram Logo */}
-        <div className="flex items-center gap-2">
-          <img 
-            src="/ingram-logo.png" 
-            alt="Ingram Micro" 
-            className="h-16 w-auto"
-            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
-          />
-          {/* <span className="text-sm font-bold text-foreground hidden sm:inline">Ingram Dashboard</span> */}
-        </div>
+        {/* Logo */}
+        <span className="text-sm font-bold text-foreground">logo</span>
         <div className="h-5 w-px bg-border" />
         <MultiSelectDropdown
           label="Release"
